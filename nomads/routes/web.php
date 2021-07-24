@@ -19,3 +19,6 @@ Route::get('/', function () {
 Route::get('/foo', function () {
     return "Hello wordld";
 });
+Route::get('/array', function () {
+    return [1, 2, 3];
+});
