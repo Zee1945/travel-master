@@ -59,7 +59,7 @@ Nomads
                         <div class="travel-country">INDONESIA</div>
                         <div class="travel-location">RUBIAH, SABANG</div>
                         <div class="travel-button mt-auto">
-                            <a href="details.html" class="btn btn-travel-details px-4">
+                            <a href="{{route('detail')}}" class="btn btn-travel-details px-4">
                                 View Details
                             </a>
                         </div>
@@ -71,7 +71,7 @@ Nomads
                         <div class="travel-country">INDONESIA</div>
                         <div class="travel-location"> RUBIAH, SABANG</div>
                         <div class="travel-button mt-auto">
-                            <a href="details.html" class="btn btn-travel-details px-4">
+                            <a href="{{route('detail')}}" class="btn btn-travel-details px-4">
                                 View Details
                             </a>
                         </div>
@@ -83,7 +83,7 @@ Nomads
                         <div class="travel-country">INDONESIA</div>
                         <div class="travel-location">RUBIAH, SABANG</div>
                         <div class="travel-button mt-auto">
-                            <a href="details.html" class="btn btn-travel-details px-4">
+                            <a href="{{route('detail')}}" class="btn btn-travel-details px-4">
                                 View Details
                             </a>
                         </div>
@@ -95,7 +95,7 @@ Nomads
                         <div class="travel-country">INDONESIA</div>
                         <div class="travel-location">RUBIAH, SABANG</div>
                         <div class="travel-button mt-auto">
-                            <a href="details.html" class="btn btn-travel-details px-4">
+                            <a href="{{route('detail')}}" class="btn btn-travel-details px-4">
                                 View Details
                             </a>
                         </div>
@@ -103,7 +103,7 @@ Nomads
                 </div>
             </div>
         </section>
-
+        
         <section class="section-network">
             <div class="container">
                 <div class="row">
@@ -116,9 +116,9 @@ Nomads
                     </div>
                     <div class="col-md-8 text-center">
                         <div class="partners-logo d-flex">
-                            <img src="frontend/img/partners/bnb.png" alt="Parner Logo" class="img-partner">
-                            <img src="frontend/img/partners/telkomsel.png" alt="Parner Logo" class="img-partner">
-                            <img src="frontend/img/partners/traveloka.png" alt="Parner Logo" class="img-partner">
+                            <img src="{{url('frontend/img/partners/bnb.png')}}" alt="Parner Logo" class="img-partner">
+                            <img src="{{url('frontend/img/partners/telkomsel.png')}}" alt="Parner Logo" class="img-partner">
+                            <img src="{{url('frontend/img/partners/traveloka.png')}}" alt="Parner Logo" class="img-partner">
                         </div>
                     </div>
                 </div>

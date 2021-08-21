@@ -11,7 +11,7 @@
             <p>We Have Sent You Email for Trip Instruction
                 <br>
                 Please Read it as Well </p>
-            <a href="index.html" class="btn btn-homepage mt-3 px-5">Homepage</a>
+            <a href="{{route('home')}}" class="btn btn-homepage mt-3 px-5">Homepage</a>
         </div>
     </div>
 </main>
