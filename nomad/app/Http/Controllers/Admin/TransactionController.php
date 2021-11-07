@@ -64,8 +64,7 @@ class TransactionController extends Controller
             'details', 'travel_package', 'user'
         ])->findOrFail($id);
         return view(
-            'pages.admin.transaction
-            .detail',
+            'pages.admin.transaction.detail',
             [
                 'item' => $item
             ]

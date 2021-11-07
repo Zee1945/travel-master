@@ -6,13 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 use App\TravelPackages;
+use App\Transaction;
 
 class TransactionDetail extends Model
 {
     use SoftDeletes;
 
     protected $fillable = [
-        'transaction_id', 'username', 'nationality', 'is_visa', 'doe_passport'
+        'transactions_id', 'username', 'nationality', 'is_visa', 'doe_passport'
     ];
 
     protected $hidden = [];

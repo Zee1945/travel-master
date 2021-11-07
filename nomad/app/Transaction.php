@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 use App\TravelPackages;
+// use App\TransactionDetail;
+// use App\User;
 
 class Transaction extends Model
 {
@@ -13,6 +15,8 @@ class Transaction extends Model
 
     protected $fillable = [
         'travel_packages_id', 'users_id', 'additional_visa', 'transaction_total', 'transaction_status'
+
+
     ];
 
     protected $hidden = [];
@@ -24,6 +28,15 @@ class Transaction extends Model
 
     public function travel_package()
     {
-        return $this->belongsTo(TransactionDetail::class, 'transactions_id', 'id');
+        return $this->belongsTo(TravelPackages::class, 'travel_packages_id', 'id');
+    }
+    // public function users()
+    // {
+    //     return $this->belongsTo(User::class, 'users_id', 'id');
+    // }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'users_id', 'id');
     }
 }
